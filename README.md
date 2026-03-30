@@ -22,15 +22,15 @@ cd mtproto
 2. Запустите скрипт инициализации
 
 ```bash
-chmod +x init_and_add_to_cron.sh
-./init_and_add_to_cron.sh
+sudo chmod +x init_and_add_to_cron.sh
+sudo ./init_and_add_to_cron.sh
 ```
 3. Зарегистрируйте свой прокси в @MTProxyBot и получите TAG
 4. Обновите TAG в .env файле
 5. Перезапустите контейнер
 
 ```bash
-./start_command.sh
+sudo ./start_command.sh
 ```
 
 > info: Если обновление по cron не требуется можно сразу запускать `./start_command.sh` но потребуется создать `.env` самостоятельно
@@ -55,7 +55,7 @@ chmod +x init_and_add_to_cron.sh
 
 Если вам нужно вручную обновить прокси или применить новые настройки из `.env`, просто выполните:
 ```bash
-./start_command.sh
+sudo ./start_command.sh
 ```
 
 ## Управление логами Cron
