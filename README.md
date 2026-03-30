@@ -1,4 +1,4 @@
-# MTProto Proxy Docker Stack
+# MTProto Proxy Docker
 
 Проект собирает актуальный прокси из [официального репозитория Telegram](https://github.com/TelegramMessenger/MTProxy)
 
@@ -33,7 +33,8 @@ sudo ./init_and_add_to_cron.sh
 sudo ./start_command.sh
 ```
 
-> info: Если обновление по cron не требуется можно сразу запускать `./start_command.sh` но потребуется создать `.env` самостоятельно
+> [!NOTE]
+> Если обновление по cron не требуется можно сразу запускать `./start_command.sh` но потребуется создать `.env` самостоятельно
 
 ### Что делает скрипт установки?
 1. Создает файл `.env` со случайными ключами `SECRET`(если файла еще нет).
